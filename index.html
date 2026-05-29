@@ -13,56 +13,21 @@
   <div class="sky-layer" id="confetti" aria-hidden="true"></div>
 
   <main>
-    <section class="card" aria-live="polite">
+    <section class="card main-card" aria-live="polite">
       <div class="eyebrow"><span class="pulse"></span><span id="status">Counting up</span></div>
 
-      <h1><span class="gradient-text">Tudor's billionth second</span></h1>
+      <h1>Tudor's billionth second</h1>
 
-      <p class="subtitle">
-        A tiny monument to the exact moment Tudor reaches one billion seconds of existence.
-        Ridiculously precise. Appropriately dramatic.
-      </p>
-
-      <div class="timer">
-        <div class="seconds-wrap">
-          <div class="label">Seconds Tudor has been alive</div>
-          <div class="seconds" id="seconds">0.000</div>
-          <div class="goal">Goal: 1,000,000,000 seconds</div>
+      <div class="timer simple-timer">
+        <div class="seconds-wrap simple-seconds-wrap">
+          <div class="seconds" id="seconds">0</div>
         </div>
-
-        <div class="progress-shell" aria-label="Progress to one billion seconds">
-          <div class="progress" id="progress"></div>
-        </div>
-
-        <div class="meta">
-          <div class="pill">
-            <span class="label">Progress</span>
-            <strong id="percent">0.000000%</strong>
-          </div>
-          <div class="pill">
-            <span class="label">Still to go</span>
-            <strong id="remaining">0s</strong>
-          </div>
-          <div class="pill">
-            <span class="label">After one billion</span>
-            <strong id="overage">0s</strong>
-          </div>
-        </div>
-      </div>
-
-      <div class="message" id="message">
-        Every tick is one more second toward the big, absurdly beautiful number.
       </div>
 
       <div class="celebration-actions" id="celebrationActions" hidden>
         <button type="button" data-burst="fireworks">More fireworks</button>
         <button type="button" data-burst="confetti">More confetti</button>
         <button type="button" data-burst="balloons">More balloons</button>
-      </div>
-
-      <div class="footer">
-        Made for Tudor. No pressure, just cosmic bookkeeping.
-        <a href="debug.html">Debug page</a>
       </div>
     </section>
   </main>
