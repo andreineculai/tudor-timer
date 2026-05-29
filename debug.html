@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Debug · Tudor's Billionth Second</title>
   <meta name="description" content="Debug controls for Tudor's billion-second birthday timer." />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=20260529-2" />
 </head>
 <body data-page="debug">
   <canvas id="fireworks" aria-hidden="true"></canvas>
@@ -14,14 +14,7 @@
 
   <main>
     <section class="card debug-card" aria-live="polite">
-      <div class="eyebrow"><span class="pulse"></span><span id="status">Debug mode</span></div>
-
-      <h1><span class="gradient-text">Tudor timer lab</span></h1>
-
-      <p class="subtitle">
-        Use this page to test the final countdown, the crossed-billion state, and all celebration effects
-        without waiting for the real milestone.
-      </p>
+      <h1>Debug timer</h1>
 
       <div class="debug-panel">
         <button type="button" id="debugFive">Set milestone 5 seconds from now</button>
@@ -29,35 +22,8 @@
         <button type="button" id="debugReset">Reset to real timer</button>
       </div>
 
-      <div class="timer">
-        <div class="seconds-wrap">
-          <div class="label">Displayed seconds alive</div>
-          <div class="seconds" id="seconds">0.000</div>
-          <div class="goal">Goal: 1,000,000,000 seconds</div>
-        </div>
-
-        <div class="progress-shell" aria-label="Progress to one billion seconds">
-          <div class="progress" id="progress"></div>
-        </div>
-
-        <div class="meta">
-          <div class="pill">
-            <span class="label">Progress</span>
-            <strong id="percent">0.000000%</strong>
-          </div>
-          <div class="pill">
-            <span class="label">Still to go</span>
-            <strong id="remaining">0s</strong>
-          </div>
-          <div class="pill">
-            <span class="label">After one billion</span>
-            <strong id="overage">0s</strong>
-          </div>
-        </div>
-      </div>
-
-      <div class="message" id="message">
-        Debug goblin awake. Press a test button and make the sky irresponsible.
+      <div class="seconds-wrap simple-seconds-wrap">
+        <div class="seconds" id="seconds">0</div>
       </div>
 
       <div class="celebration-actions always-visible" id="celebrationActions">
@@ -65,13 +31,9 @@
         <button type="button" data-burst="confetti">More confetti</button>
         <button type="button" data-burst="balloons">More balloons</button>
       </div>
-
-      <div class="footer">
-        <a href="index.html">Back to the real timer</a>
-      </div>
     </section>
   </main>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=20260529-2"></script>
 </body>
 </html>
