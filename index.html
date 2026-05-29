@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tudor's Billionth Second</title>
+  <meta name="description" content="A tiny billion-second birthday timer for Tudor." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="main">
+  <canvas id="fireworks" aria-hidden="true"></canvas>
+  <div class="sky-layer" id="balloons" aria-hidden="true"></div>
+  <div class="sky-layer" id="confetti" aria-hidden="true"></div>
+
+  <main>
+    <section class="card" aria-live="polite">
+      <div class="eyebrow"><span class="pulse"></span><span id="status">Counting up</span></div>
+
+      <h1><span class="gradient-text">Tudor's billionth second</span></h1>
+
+      <p class="subtitle">
+        A tiny monument to the exact moment Tudor reaches one billion seconds of existence.
+        Ridiculously precise. Appropriately dramatic.
+      </p>
+
+      <div class="timer">
+        <div class="seconds-wrap">
+          <div class="label">Seconds Tudor has been alive</div>
+          <div class="seconds" id="seconds">0.000</div>
+          <div class="goal">Goal: 1,000,000,000 seconds</div>
+        </div>
+
+        <div class="progress-shell" aria-label="Progress to one billion seconds">
+          <div class="progress" id="progress"></div>
+        </div>
+
+        <div class="meta">
+          <div class="pill">
+            <span class="label">Progress</span>
+            <strong id="percent">0.000000%</strong>
+          </div>
+          <div class="pill">
+            <span class="label">Still to go</span>
+            <strong id="remaining">0s</strong>
+          </div>
+          <div class="pill">
+            <span class="label">After one billion</span>
+            <strong id="overage">0s</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="message" id="message">
+        Every tick is one more second toward the big, absurdly beautiful number.
+      </div>
+
+      <div class="celebration-actions" id="celebrationActions" hidden>
+        <button type="button" data-burst="fireworks">More fireworks</button>
+        <button type="button" data-burst="confetti">More confetti</button>
+        <button type="button" data-burst="balloons">More balloons</button>
+      </div>
+
+      <div class="footer">
+        Made for Tudor. No pressure, just cosmic bookkeeping.
+        <a href="debug.html">Debug page</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
